@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>CountertopSmart</title>
+      <!-- fabicon -->
+      <link rel=" shortcut icon" href="images/favicon.ico" type="image/x-icon">
+      <!-- fontawesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/regular.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <header class="main-head">
+         <div class="header-top">
+            <div class="container large_container">
+               <div class="header-top-flex">
+                  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                  <div class="header-top-right-col">
+                     <div class="header-search">
+                        <form>
+                           <div class="header-search-wrap">
+                              <select>
+                                 <option value="0">All</option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                              </select>
+                              <input type="text" placeholder="Search here">
+                              <div class="header-search-submit">
+                                 <input type="submit">
+                                 <img src="images/search-wh.svg" alt="">
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                     <div class="header-social-media">
+                        <ul class="social-media-list">
+                           <li><span><img src="images/call-icon.svg" alt=""></span><a
+                              href="tel:+5123994099">512-399-4099</a></li>
+                           <li><span><img src="images/email-icon.svg" alt=""></span><a href="#">Contact Us</a></li>
+                           <li><span><img src="images/user-icon.svg" alt=""></span><a href="#">Login</a></li>
+                        </ul>
+                        <a href="#" class="cmn-btn">Get Instant Estimates</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header-middle">
+            <div class="container large_container">
+               <nav class="navbar navbar-expand-lg">
+                  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <button class="navbar-toggler navbar-toggler-main tog_inside" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="stick"></span>
+                     </button>
+                     <ul class="navbar-nav ms-auto">
+                        <li class="menu-item-has-children">
+                           <a href="#url">Installed Estimates</a>
+                           <ul class="sub-menu">
+                              <li><a href="#url">level 1</a></li>
+                              <li><a href="#url">level 2</a></li>
+                              <li><a href="#url">level 3</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="#url">Remnants</a></li>
+                        <li><a href="#url">Full Slabs</a></li>
+                        <li><a href="#url">Design Inspiration</a></li>
+                        <li><a href="#url">Resources</a></li>
+                        <li><a href="#url">Blog</a></li>
+                     </ul>
+                     <ul class="social-media-list">
+                        <li><span><img src="images/call-icon.svg" alt=""></span><a href="#">512-399-4099</a></li>
+                        <li><span><img src="images/email-icon.svg" alt=""></span><a href="#">Contact Us</a></li>
+                        <li><span><img src="images/user-icon.svg" alt=""></span><a href="#">Login</a></li>
+                     </ul>
+                     <div class="nav-btn-in">
+                        <a href="#" class="cmn-btn">Get Instant Estimates</a>
+                     </div>
+                  </div>
+                  <div class="nav-hed-right">
+                     <div class="header-card-button">
+                        <div class="header-card-text">Cart</div>
+                        <a href="#url"><img src="images/card-icon.svg" alt=""></a>
+                        <span class="card-value">0</span>
+                     </div>
+                     <button class="navbar-toggler navbar-toggler-main tog_open" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="stick"></span>
+                     </button>
+                  </div>
+               </nav>
+            </div>
+            <button class="navbar-toggler" id="navoverlay" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation"></button>
+         </div>
+         <div class="header-bottom">
+            <div class="container large_container">
+               <div class="header-bottom-flex swiper cardSlider">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <div class="header-bottom-col-wrap">
+                           <span><img src="images/header-btm-icon1.svg" alt=""></span>
+                           <div class="header-bottom-text">100% Satisfaction Guaranteed</div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="header-bottom-col-wrap">
+                           <span><img src="images/header-btm-icon2.svg" alt=""></span>
+                           <div class="header-bottom-text">Precision Fit</div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="header-bottom-col-wrap">
+                           <span><img src="images/header-btm-icon3.svg" alt=""></span>
+                           <div class="header-bottom-text">Vetted Providers</div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="header-bottom-col-wrap">
+                           <span><img src="images/header-btm-icon4.svg" alt=""></span>
+                           <div class="header-bottom-text">Privacy Protection</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="details-sec">
+         <div class="container large_container">
+            <div class="step-form">
+               <div class="order-received-step">
+                  <div class="order-received-box active prev-active">
+                     <div class="order-received-name">Find a Style</div>
+                  </div>
+                  <span class="step-border active"></span>
+                  <div class="order-received-box active">
+                     <div class="order-received-name">Click “Get Installation Estimates”</div>
+                  </div>
+                  <span class="step-border"></span>
+                  <div class="order-received-box">
+                     <div class="order-received-name">Enter your desired dimensions</div>
+                  </div>
+                  <span class="step-border"></span>
+                  <div class="order-received-box">
+                     <div class="order-received-name">Compare your instant estimates</div>
+                  </div>
+               </div>
+               <div class="details-wrap">
+                  <div class="details-flex">
+                     <!-- 1 -->
+                     <div class="details-col-left ">
+                        <div class="swiper details-img-top">
+                           <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                 <a data-src="images/dtl-product1.jpeg" class="details-img-top-wrap" data-fancybox="gallery">
+                                 <img src="images/dtl-product1.jpeg" alt="">
+                                 </a>
+                              </div>
+                              <div class="swiper-slide">
+                                 <a data-src="images/dtl-product2.jpeg" class="details-img-top-wrap" data-fancybox="gallery">
+                                 <img src="images/dtl-product2.jpeg" alt="">
+                                 </a>
+                              </div>
+                              <div class="swiper-slide">
+                                 <a data-src="images/dtl-product3.jpeg" class="details-img-top-wrap" data-fancybox="gallery">
+                                 <img src="images/dtl-product3.jpeg" alt="">
+                                 </a>
+                              </div>
+                              <div class="swiper-slide">
+                                 <a data-src="images/dtl-product4.jpeg" class="details-img-top-wrap" data-fancybox="gallery">
+                                 <img src="images/dtl-product4.jpeg" alt="">
+                                 </a>
+                              </div>
+                              <div class="swiper-slide">
+                                 <a data-src="images/dtl-product5.jpeg" class="details-img-top-wrap" data-fancybox="gallery">
+                                 <img src="images/dtl-product5.jpeg" alt="">
+                                 </a>
+                              </div>
+                              <div class="swiper-slide">
+                                 <a data-src="images/dtl-product1.jpeg" class="details-img-top-wrap" data-fancybox="gallery">
+                                 <img src="images/dtl-product1.jpeg" alt="">
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper details-img-bottom">
+                           <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                 <div class="details-img-bottom-wrap">
+                                    <img src="images/dtl-product1.jpeg" alt="">
+                                 </div>
+                              </div>
+                              <div class="swiper-slide">
+                                 <div class="details-img-bottom-wrap">
+                                    <img src="images/dtl-product2.jpeg" alt="">
+                                 </div>
+                              </div>
+                              <div class="swiper-slide">
+                                 <div class="details-img-bottom-wrap">
+                                    <img src="images/dtl-product3.jpeg" alt="">
+                                 </div>
+                              </div>
+                              <div class="swiper-slide">
+                                 <div class="details-img-bottom-wrap">
+                                    <img src="images/dtl-product4.jpeg" alt="">
+                                 </div>
+                              </div>
+                              <div class="swiper-slide">
+                                 <div class="details-img-bottom-wrap">
+                                    <img src="images/dtl-product5.jpeg" alt="">
+                                 </div>
+                              </div>
+                              <div class="swiper-slide">
+                                 <div class="details-img-bottom-wrap">
+                                    <img src="images/dtl-product2.jpeg" alt="">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="img-expand">
+                           <a href="#url">Click Image to expand </a>
+                        </div>
+                     </div>
+                     <!-- 2 -->
+                     <div class="details-col-center">
+                        <div class="details-col-center-wrap">
+                           <div class="details-product-name">Silestone Charcoal Soapstone | Installed Quartz
+                              Countertops | Polished Finish & Suede Finish Available | 2cm and 3cm Thickness
+                              Options
+                           </div>
+                           <span class="silestone-text">Shop All Silestone Quartz Options</span>
+                           <div class="best-selling-tag"><img src="images/selling-icon.svg" alt=""> <span>Best
+                              Selling Style</span>
+                           </div>
+                           <div class="favorites-text"><img src="images/favorites-icon.svg" alt=""> <span>Add to
+                              Favorites</span>
+                           </div>
+                           <div class="details-price">
+                              <p>$95.41</p>
+                              <span>/ sf installed <img src="images/drill-icon.svg" alt=""></span>
+                           </div>
+                           <div class="approximated-wrap">
+                              <div class="approximated-btn">Approximated</div>
+                              <button type="button" class="btn-exclamation"><img src="images/exclation-icon.svg"
+                                 alt=""></button>
+                           </div>
+                           <span class="silestone-text">FREE Onsite Laser Measuring</span>
+                           <div class="divider-div"></div>
+                           <div class="product-size">
+                              <div class="thickness-text">Thickness: <b>3cm</b></div>
+                              <form class="product-size-form-wrap">
+                                 <div class="frm-label">
+                                    <label>
+                                    <input type="radio" name="thickness" id="thickness1" disabled>
+                                    <span>1.5 cm</span>
+                                    </label>
+                                 </div>
+                                 <div class="frm-label">
+                                    <label>
+                                    <input type="radio" name="thickness" id="thickness2">
+                                    <span>2 cm</span>
+                                    </label>
+                                 </div>
+                                 <div class="frm-label">
+                                    <label>
+                                    <input type="radio" name="thickness" id="thickness3" checked>
+                                    <span>3 cm</span>
+                                    </label>
+                                 </div>
+                              </form>
+                           </div>
+                           <div class="product-size">
+                              <div class="thickness-text">Finish: <b>Polished</b></div>
+                              <form class="product-size-form-wrap">
+                                 <div class="frm-label">
+                                    <label>
+                                    <input type="radio" name="finish" id="finish1">
+                                    <span>Suede</span>
+                                    </label>
+                                 </div>
+                                 <div class="frm-label">
+                                    <label>
+                                    <input type="radio" name="finish" id="finish2" checked>
+                                    <span>Polished</span>
+                                    </label>
+                                 </div>
+                              </form>
+                           </div>
+                           <div class="product-size charcoal-color">
+                              <div class="thickness-text">Style: <b>Charcoal Soapstone</b></div>
+                              <form class="product-size-form-wrap">
+                                 <div class="frm-label-charcoal charcoal-black">
+                                    <label>
+                                    <input type="radio" name="charcoal" id="charcoal1" checked>
+                                    <span></span>
+                                    </label>
+                                 </div>
+                                 <div class="frm-label-charcoal charcoal-light-gary">
+                                    <label>
+                                    <input type="radio" name="charcoal" id="charcoal2">
+                                    <span></span>
+                                    </label>
+                                 </div>
+                                 <div class="frm-label-charcoal charcoal-light-black">
+                                    <label>
+                                    <input type="radio" name="charcoal" id="charcoal3">
+                                    <span></span>
+                                    </label>
+                                 </div>
+                                 <div class="frm-label-charcoal charcoal-gray">
+                                    <label>
+                                    <input type="radio" name="charcoal" id="charcoal4">
+                                    <span></span>
+                                    </label>
+                                 </div>
+                                 <div class="frm-label-charcoal charcoal-gray-dark">
+                                    <label>
+                                    <input type="radio" name="charcoal" id="charcoal5">
+                                    <span></span>
+                                    </label>
+                                 </div>
+                                 <div class="frm-label-charcoal charcoal-white-gary">
+                                    <label>
+                                    <input type="radio" name="charcoal" id="charcoal6">
+                                    <span></span>
+                                    </label>
+                                 </div>
+                                 <div class="frm-label-charcoal charcoal-dark-orange">
+                                    <label>
+                                    <input type="radio" name="charcoal" id="charcoal7">
+                                    <span></span>
+                                    </label>
+                                 </div>
+                              </form>
+                           </div>
+                           <a href="#" class="btn-all-shop">Shop All Silestone Quartz Options</a>
+                           <div class="divider-div"></div>
+                           <div class="product-about">
+                              <div class="product-about-hd">About This Item:</div>
+                              <p><b>Aesthetic Description:</b> A beautiful black background softly etched with
+                                 delicately fine pale grey veins - add dramatic depth to modern and classic
+                                 designs alike with this bewitching stone.
+                              </p>
+                              <p><b>Suitable Applications:</b> Indoor Surfaces Only</p>
+                              <p><b>Popular Uses:</b> Kitchen Countertops, Bathroom Countertops, Kitchen Island
+                                 Countertops, Laundry Room Countertops, Wet Bars, Tabletops, as well as Vertical
+                                 Applications such as Backsplashes, Waterfall Sides, and Shower Surrounds
+                              </p>
+                              <p><b>Brand:</b> Silestone</p>
+                              <p><b>Style:</b> Charcoal Soapstone</p>
+                           </div>
+                           <div class="product-information">
+                              <div class="product-about-hd">Product Information:</div>
+                              <div class="product-information-wrap">
+                                 <table>
+                                    <tr>
+                                       <td>Stain Resistance</td>
+                                       <td>
+                                          <div class="product-wrap-td">Highly Resistant: <span>Not affected by
+                                             agents in ASTM stain test</span>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>Scratch Resistance</td>
+                                       <td>
+                                          <div class="product-wrap-td">Highly Resistant: <span>179mg LW in
+                                             ASTM abrasion test</span>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>Heat Resistance</td>
+                                       <td>
+                                          <div class="product-wrap-td">Highly Resistant: <span>Resistant to
+                                             high temps for brief period of time</span>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>Heat Resistance</td>
+                                       <td>
+                                          <div class="product-wrap-td">High: <span>Mohs hardness rating N/A;
+                                             as hard or harder than granite</span>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>Periodic Re-sealing</td>
+                                       <td>
+                                          <div class="product-wrap-td">Not Required</div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>Country of Origin</td>
+                                       <td>
+                                          <div class="product-wrap-td">Spain</div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>Item Weight</td>
+                                       <td>
+                                          <div class="product-wrap-td">14.2 lbs/sf</div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>Material Warranty</td>
+                                       <td>
+                                          <div class="product-wrap-td">25-Year Warranty</div>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                           <div class="product-documentation">
+                              <h4>Product Documentation & Resources:</h4>
+                              <ul>
+                                 <li><a href="#">Silestone Use and Care Guide (PDF)</a></li>
+                                 <li><a href="#">Silestone Product Warranty (PDF)</a></li>
+                                 <li><a href="#">Silestone Technical Data Sheet (PDF)</a></li>
+                                 <li><a href="#">Silestone Environmental Product Declaration (PDF)</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- 3 -->
+                     <div class="details-col-right">
+                        <div class="privacy-wrap">
+                           <div class="privacy-hd">
+                              <div class="privacy-img"><img src="images/privacy-img.png" alt=""></div>
+                              <div class="privacy-cont">
+                                 <h5>Privacy Protection Guarantee</h5>
+                              </div>
+                           </div>
+                           <div class="privacy-info">
+                              <p>CountertopSmart takes your privacy seriously. We do not share your information or
+                                 permit 3rd party solicitation. <a href="#">Learn More</a>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="location-wrap">
+                           <div class="map-wrap">
+                              <iframe
+                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1656.6904703230105!2d-97.68931010749398!3d30.22292034494446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b6a570e21593%3A0xef2ac26e7b98d7a5!2sCosentino%20Center%20Austin!5e0!3m2!1sen!2sin!4v1715081633428!5m2!1sen!2sin" allowfullscreen="" loading="lazy"
+                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+                           </div>
+                           <div class="location-info">
+                              <h5>View This Style in Person:</h5>
+                              <p>Cosentino Center <br>1340 Airport Commerce Dr.<br> Austin, TX 78741</p>
+                              <span>Mon - Fri</span>
+                              <span>7:30am - 12pm,</span>
+                              <span>1pm - 4:30pm</span>
+                           </div>
+                        </div>
+                        <div class="installed-wrap">
+                           <ul class="nav nav-tabs" id="myTab" role="tablist">
+                              <li class="nav-item" role="presentation">
+                                 <button class="nav-link active" id="installed-tab" data-bs-toggle="tab"
+                                    data-bs-target="#installed" type="button" role="tab"
+                                    aria-controls="installed" aria-selected="true">Installed</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                 <button class="nav-link" id="slabs-tab" data-bs-toggle="tab"
+                                    data-bs-target="#slabs" type="button" role="tab" aria-controls="slabs"
+                                    aria-selected="false">Slabs</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                 <button class="nav-link" id="remnants-tab" data-bs-toggle="tab"
+                                    data-bs-target="#remnants" type="button" role="tab" aria-controls="remnants"
+                                    aria-selected="false">Remnants</button>
+                              </li>
+                           </ul>
+                           <div class="tab-content" id="myTabContent">
+                              <div class="tab-pane fade show active" id="installed" role="tabpanel"
+                                 aria-labelledby="installed-tab">
+                                 <div class="tab-content-wrap">
+                                    <div class="details-price">
+                                       <p>$95.41</p>
+                                       <span>/ sf installed</span>
+                                    </div>
+                                    <div class="approximated-wrap">
+                                       <div class="approximated-btn">Approximated</div>
+                                       <button type="button" class="btn-exclamation"><img
+                                          src="images/exclation-icon.svg" alt=""></button>
+                                    </div>
+                                    <div class="free-onsite"><span class="bg-blue-text">FREE Onsite Laser
+                                       Measuring</span><br> <span class="bg-gray-text">As soon as</span>
+                                       Wednesday, April 3rd
+                                    </div>
+                                    <div class="free-onsite"><span class="bg-blue-text">FREE Installation
+                                       Estimates</span><br> <span class="bg-gray-text">Installed as soon
+                                       as</span> April 17th
+                                    </div>
+                                    <div class="address-info">
+                                       <div class="address-info-img">
+                                          <img src="images/map-logo.png" alt="">
+                                       </div>
+                                       <p>Countertop Installation Available in Austin 78745 </p>
+                                    </div>
+                                    <div class="select-option-wrap">
+                                       <form>
+                                          <label>In Stock</label>
+                                          <div class="select-option-select">
+                                             <select>
+                                                <option value="0">Quantity: 1</option>
+                                                <option value="1">Quantity: 2</option>
+                                                <option value="2">Quantity: 3</option>
+                                                <option value="3">Quantity: 4</option>
+                                             </select>
+                                          </div>
+                                          <div class="select-option-submit">
+                                             <input type="submit" value="Get Installation Estimates"
+                                                class="">
+                                          </div>
+                                       </form>
+                                    </div>
+                                    <div class="what-receive">
+                                       <h3>What you’ll receive:</h3>
+                                       <ul>
+                                          <li>Instant estimates from vetted local countertop installers</li>
+                                          <li>Unlimited ability to swap styles and update your estimates</li>
+                                          <li>Free precision laser measuring to ensure accuracy and fairness
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <div class="what-receive what-need">
+                                       <h3>What we’ll need:</h3>
+                                       <ul>
+                                          <li><span><img src="images/what-we-need1.png" alt=""></span> You’ll
+                                             be asked to enter your desired dimensions using our drawing tool
+                                          </li>
+                                          <li><span><img src="images/what-we-need2.png" alt=""></span> If you
+                                             prefer to send us architectural drawings (or even a rough
+                                             sketch), we’re happy to do this for you
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tab-pane fade" id="slabs" role="tabpanel" aria-labelledby="slabs-tab">
+                                 <div class="tab-content-wrap">
+                                    <div class="free-onsite">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt accusantium voluptate tempora placeat maxime possimus.</div>
+                                 </div>
+                              </div>
+                              <div class="tab-pane fade" id="remnants" role="tabpanel"
+                                 aria-labelledby="remnants-tab">
+                                 <div class="tab-content-wrap">
+                                    <div class="free-onsite">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt accusantium voluptate tempora placeat maxime possimus.</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="questions-wrap">
+                           <h5>Do You Have Questions?<br> We’re ready to help</h5>
+                           <p>If you have questions about countertop installation, countertop materials, this
+                              website, or this process, please call us at: <a
+                                 href="tel:+5123994099">512-399-4099</a>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="blog-post-overlay">
+            <img src="images/details-overlay-image.jpeg" class="image-overlay" alt="">
+         </div>
+      </section>
+      <div class="divider-section"></div>
+      <section class="customers-viewed">
+         <div class="container">
+            <div class="customers-viewed-wrap">
+               <h2>Customers who viewed Silestone Charcoal Soapstone also viewed these countertop styles:</h2>
+               <div class="swiper js-customers-viewed">
+                  <div class="swiper-wrapper">
+
+                     <a href="#" class="swiper-slide">
+                        <div class="customers-viewed-col">
+                           <div class="customers-viewed-img">
+                              <img src="images/customers-viewed1.png" alt="">
+                           </div>
+                           <div class="customers-viewed-cont">
+                              <p>Vicostone Belgian Blue | Installed Quartz Countertops | Polished Finish | 2cm and 3cm Thickness Options </p>
+                              <div class="guaranteed-btn">Guaranteed</div>
+                              <div class="customers-viewed-price"><span>$75.30/</span> sf installed</div>
+                           </div>
+                        </div>
+                    </a>
+
+                     <a href="#" class="swiper-slide">
+                        <div class="customers-viewed-col">
+                           <div class="customers-viewed-img">
+                              <img src="images/customers-viewed2.png" alt="">
+                           </div>
+                           <div class="customers-viewed-cont">
+                              <p>Dekton Laos | Installed Sintered Stone Countertops | Honed Finish | 2cm and 3cm Thickness Options</p>
+                              <div class="approximated-btn">Approximated</div>
+                              <div class="customers-viewed-price"><span>$75.30/</span> sf installed</div>
+                           </div>
+                        </div>
+                    </a>
+
+                     <a href="#" class="swiper-slide">
+                        <div class="customers-viewed-col">
+                           <div class="customers-viewed-img">
+                              <img src="images/customers-viewed3.png" alt="">
+                           </div>
+                           <div class="customers-viewed-cont">
+                              <p>Vicostone Belgian Blue | Installed Quartz Countertops | Polished Finish | 2cm and 3cm Thickness Options</p>
+                              <div class="guaranteed-btn">Guaranteed</div>
+                              <div class="customers-viewed-price"><span>$75.30/</span> sf installed</div>
+                           </div>
+                        </div>
+                    </a>
+
+                     <a href="#" class="swiper-slide">
+                        <div class="customers-viewed-col">
+                           <div class="customers-viewed-img">
+                              <img src="images/customers-viewed1.png" alt="">
+                           </div>
+                           <div class="customers-viewed-cont">
+                              <p>Vicostone Belgian Blue | Installed Quartz Countertops | Polished Finish | 2cm and 3cm Thickness Options </p>
+                              <div class="guaranteed-btn">Guaranteed</div>
+                              <div class="customers-viewed-price"><span>$75.30/</span> sf installed</div>
+                           </div>
+                        </div>
+                    </a>
+
+                     <a href="#" class="swiper-slide">
+                        <div class="customers-viewed-col">
+                           <div class="customers-viewed-img">
+                              <img src="images/customers-viewed4.png" alt="">
+                           </div>
+                           <div class="customers-viewed-cont">
+                              <p>Vicostone Belgian Blue | Installed Quartz Countertops | Polished Finish | 2cm and 3cm Thickness Options </p>
+                              <div class="guaranteed-btn">Guaranteed</div>
+                              <div class="customers-viewed-price"><span>$75.30/</span> sf installed </div>
+                           </div>
+                        </div>
+                    </a>
+
+                     <a href="#" class="swiper-slide">
+                        <div class="customers-viewed-col">
+                           <div class="customers-viewed-img">
+                              <img src="images/customers-viewed2.png" alt="">
+                           </div>
+                           <div class="customers-viewed-cont">
+                              <p>Vicostone Belgian Blue | Installed Quartz Countertops | Polished Finish | 2cm and 3cm Thickness Options </p>
+                              <div class="guaranteed-btn">Guaranteed</div>
+                              <div class="customers-viewed-price"><span>$75.30/</span> sf installed</div>
+                           </div>
+                        </div>
+                    </a>
+                     
+                  </div>
+                  <div class="js-customers-next"></div>
+                  <div class="js-customers-prev"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="divider-section"></div>
+      <section class="discussion-board">
+         <div class="container">
+            <div class="discussion-board-wrap">
+               <div class="discussion-board-col">
+                  <h2>Discussion Board</h2>
+                  <p>Post your questions about this product or begin a discussion with fellow customers in the countertop community. All questions will receive a quick reply from a CountertopSmart product expert.</p>
+                  <textarea placeholder="Post your question and receive a quick reply"></textarea>
+               </div>
+               <div class="discussion-ques">
+                  <p class="question-text"><b>Q:</b> Can I take a pan out of the oven and set it directly on the countertop without damaging the countertop?</p>
+                  <p class="mrg-btm0"><b>A:</b> Short answer is: Always use a hot pad or a trivet and never set an extremely hot pot or pan directly on any countertop surface. Cosentino positions Silestone as both heat and scorch resistant for a “brief” period of time but their technical data sheets provide no information as to what temperatures they’re able to resist and for how long. </p>
+                  <span><b>By CountertopSmart Product Expert</b></span>
+                  <a href="#" class="see-full-text">See full answer</a>
+               </div>
+               <div class="discussion-ques">
+                  <p class="question-text"><b>Q:</b> Can I honor the dark lord Baphomet by sacrificing virgins on this countertop?</p>
+                  <p class="mrg-btm0"><b>A:</b> You do your dark lord a great honor with this gesture and he will surely sound his gjallerhorn as you feast together in the 7th circle of hell. </p>
+                  <span><b>By CountertopSmart Product Expert</b></span>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="main_footer">
+         <div class="footr_top">
+            <div class="container">
+               <div class="footr_top_row">
+                  <div class="footr_col footr_frst_col">
+                     <div class="footr_box">
+                        <div class="footr_logo">
+                           <a href="index.html">
+                           <img src="images/footr_logo.png" alt="">
+                           </a>
+                        </div>
+                        <ul class="footr_scl_lstng">
+                           <li><a href="#url"><img src="images/fb_icon.svg" alt=""></a></li>
+                           <li><a href="#url"><img src="images/insta_icon.svg" alt=""></a></li>
+                           <li><a href="#url"><img src="images/mail_icon.svg" alt=""></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="footr_col footr_scnd_col">
+                     <div class="footr_box">
+                        <div class="footr_hdng">
+                           <p>General</p>
+                        </div>
+                        <ul class="footr_lstng">
+                           <li><a href="#url">Home</a></li>
+                           <li><a href="#url">Countertops</a></li>
+                           <li><a href="#url">Remnants</a></li>
+                           <li><a href="#url">Contact</a></li>
+                           <li><a href="#url">Quartz Color Guide</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="footr_col footr_thrd_col">
+                     <div class="footr_box">
+                        <div class="footr_hdng">
+                           <p>Information</p>
+                        </div>
+                        <ul class="footr_lstng">
+                           <li><a href="#url">FAQs</a></li>
+                           <li><a href="#url">Blog</a></li>
+                           <li><a href="#url">Template Checklist</a></li>
+                           <li><a href="#url">Pre-Installation Guide</a></li>
+                           <li><a href="#url">How to Measure Countertops</a></li>
+                           <li><a href="#url">Terms of Installation</a></li>
+                           <li><a href="#url">Customer Reviews</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="footr_col footr_furth_col">
+                     <div class="footr_box">
+                        <div class="footr_hdng">
+                           <p>Accounts</p>
+                        </div>
+                        <ul class="footr_lstng">
+                           <li><a href="#url">Login</a></li>
+                           <li><a href="#url">Create Account</a></li>
+                           <li><a href="#url">My Dashboard</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="footr_col footr_fifth_col">
+                     <div class="footr_box">
+                        <div class="footr_hdng">
+                           <p>Contact</p>
+                        </div>
+                        <div class="footr_cntct_box">
+                           <div class="footr_cntct_indvdl_box footr_numbr_box">
+                              <a href="tel:5123994099">512-399-4099</a>
+                           </div>
+                           <div class="footr_cntct_indvdl_box">
+                              <a href="mailto:hello@countertopsmart.com">hello@countertopsmart.com</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footr_bot">
+            <div class="container">
+               <div class="row footr_bot_row">
+                  <div class="col-md-6 footr_bot_lft_col">
+                     <div class="cprght_box">
+                        <p><a href="index.html">CountertopSmart.com</a> © 2024 All Rights Reserved.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-6 footr_bot_rght_col">
+                     <ul class="footr_bot_lstng">
+                        <li><span><a href="#url">Terms</a></span>, <span><a href="#url">Privacy &
+                           Conditions</a></span>
+                        </li>
+                        <li><a href="#url">Sitemap</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Jquery-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="js/common.js"></script>
+   </body>
+</html>
