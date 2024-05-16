@@ -325,5 +325,31 @@ var swiper11 = new Swiper(".js-customers-viewed", {
  Fancybox.bind('[data-fancybox]', {
 });   
 
-Fancybox.bind('[data-fancybox="gallery"]', {
-}); 
+// Fancybox.bind('[data-fancybox="gallery"]', {
+// }); 
+
+// custome select
+
+let index = 1;
+
+const on = (listener, query, fn) => {
+	document.querySelectorAll(query).forEach((item) => {
+		item.addEventListener(listener, (el) => {
+			fn(el);
+		});
+	});
+};
+
+on("click", ".selectBtn", (item) => {
+	const next = item.target.nextElementSibling;
+  const parentEle = item.target.parentElement;
+  parentEle.classList.toggle("active");
+	next.classList.toggle("toggle");
+	next.style.zIndex = index++;
+});
+on("click", ".option", (item) => {
+	item.target.parentElement.classList.remove("toggle");
+  item.target.parentElement.parentElement.classList.remove("active")
+	const parent = item.target.closest(".select").children[0];
+	parent.innerText = item.target.innerText;
+});
