@@ -353,3 +353,14 @@ on("click", ".option", (item) => {
 	const parent = item.target.closest(".select").children[0];
 	parent.innerText = item.target.innerText;
 });
+
+// input type number only
+
+function isNumber(evt) {
+  evt = (evt) ? evt : window.event;
+  var charCode = (evt.which) ? evt.which : evt.keyCode;
+  if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+      return false;
+  }
+  return true;
+}
