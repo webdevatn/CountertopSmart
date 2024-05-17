@@ -154,11 +154,11 @@
                      <span class="c-step-number">1</span>
                      <div class="c-step-name">Choose an Estimate</div>
                   </div>
-                  <div class="c-step-box active ch-pre-active">
+                  <div class="c-step-box  active ch-pre-active">
                      <span class="c-step-number">2</span>
                      <div class="c-step-name">Schedule Measurement</div>
                   </div>
-                  <div class="c-step-box">
+                  <div class="c-step-box active">
                      <span class="c-step-number">3</span>
                      <div class="c-step-name">Finalize Quote</div>
                   </div>
@@ -168,28 +168,129 @@
                   </div>
                </div>
             </div>
-
-
-
-            <div class="view-estimate">
-               <div class="view-estimate-hd">
-                  <a href="#"><img src="images/edit-icon.svg" alt=""> Project Estimate</a>
-               </div>
-
-
-
-               <div class="view-estimate-info">
-                  <div class="view-estimate-info-col">
-                     <div class="view-estimate-info-item">
-                        <label>Provider</label>
-                        <div class="view-estimate-info-flex">
-                           
+         </div>
+         <div class="your-cart">
+            <div class="container">
+               <div class="your-cart-row-wrap">
+                  <div class="row">
+                     <div class="col-md-5">
+                        <div class="your-cart-item">
+                           <div class="your-cart-hd">
+                              <h2>Your cart</h2>
+                           </div>
+                           <div class="your-cart-wrap">
+                              <div class="your-cart-col">
+                                 <a href="#" class="your-cart-col-img">
+                                    <img src="images/your-cart-img1.png" alt="">
+                                 </a>
+                                 <div class="your-cart-col-text">
+                                    <a href="#" class="your-cart-name">Kitchen | 29.17SF</a>
+                                    <p>Details</p>
+                                    <div class="cart-text">Blue Flower</div>
+                                    <div class="cart-text">Polished | 3cm</div>
+                                 </div>
+                              </div>
+                              <div class="your-cart-col">
+                                 <a href="#" class="your-cart-col-img">
+                                    <img src="images/your-cart-img2.png" alt="">
+                                 </a>
+                                 <div class="your-cart-col-text">
+                                    <a href="#" class="your-cart-name">Bathroom | 29.17SF</a>
+                                    <p>Details</p>
+                                    <div class="cart-text">Blue Flower</div>
+                                    <div class="cart-text">Polished | 3cm</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-7">
+                        <div class="payment-method">
+                           <form>
+                              <div class="payment-method-hd">
+                                 <h3>Payment method</h3>
+                              </div>
+                              <div class="payment-method-option">
+                                 <div class="payment-method-option-img">
+                                    <img src="images/payment-method-option-im.png" alt="">
+                                 </div>
+                                 <div class="payment-method-bank">
+                                    <label>
+                                       <input type="radio" name="thickness" id="thickness1">
+                                       <span><img src="images/bank-img.svg" alt=""> Us bank account</span>
+                                     </label>
+                                 </div>
+                              </div>
+                              <div class="select-item">
+                                 <select>
+                                    <option value="0">Secure, 1-click checkout with Link</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                 </select>
+                              </div>
+                              <div class="payment-method-form">
+                                 <div class="payment-method-form-row">
+                                    <div class="payment-method-form-col">
+                                       <label>Card name</label>
+                                       <input type="text" placeholder="Jhonson Rose">
+                                    </div>
+                                    <div class="payment-method-form-col">
+                                       <label>Card number</label>
+                                       <input type="text" onkeypress="return isNumber(event)" placeholder="0000 0000 00">
+                                    </div>
+                                    <div class="payment-method-form-col">
+                                       <label>Expiration date</label>
+                                       <input type="text" onkeypress="return isNumber(event)" placeholder="0000 0000 00">
+                                    </div>
+                                    <div class="payment-method-form-col">
+                                       <label>CVC</label>
+                                       <input type="text" onkeypress="return isNumber(event)" placeholder="0000 0000 00">
+                                    </div>
+                                    <div class="payment-method-form-col">
+                                       <label>Country</label>
+                                       <select>
+                                          <option value="0">Lorem ipsum</option>
+                                          <option value="1">Afghanistan</option>
+                                          <option value="2">Albania</option>
+                                          <option value="3">Algeria</option>
+                                       </select>
+                                    </div>
+                                    <div class="payment-method-form-col">
+                                       <label>Zipcode</label>
+                                       <input type="text" onkeypress="return isNumber(event)" placeholder="1234567">
+                                    </div>
+                                 </div>
+                                 <div class="payment-method-divider"></div>
+                                 <div class="total-price">
+                                    <table>
+                                       <tr>
+                                         <td>Total due:</td>
+                                         <td><b>6,414.30</b></td>
+                                       </tr>
+                                       <tr>
+                                         <td>Shipping</td>
+                                         <td><b>Free</b></td>
+                                       </tr>
+                                       <tr class="total-valu">
+                                          <td><span class="total-price-number">Total</span></td>
+                                          <td><span class="total-price-number">6,414.30</span></td>
+                                        </tr>
+                                     </table>
+                                 </div>
+                                 <div class="payment-method-submit-btn">
+                                    <input type="submit" value="Pay now">
+                                 </div>
+                              </div>
+                           </form>
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
 
+            </div>
          </div>
          <img src="images/check-out-overlay-img.png" class="check-out-overlay-img" alt="">
       </section>
