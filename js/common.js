@@ -364,3 +364,41 @@ function isNumber(evt) {
   }
   return true;
 }
+
+// search result
+
+var init = false;
+var pricingCardSwiper;
+function searchCards() {
+  if (window.innerWidth <= 767) {
+    if (!init) {
+      init = true;
+      pricingCardSwiper = new Swiper(".js-search-result", {
+        slidesPerView: 1,
+        grabCursor: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        keyboard: true,
+        breakpoints: {
+          767: {
+            slidesPerView: 3,
+        },
+        575: {
+          slidesPerView: 3,
+      },
+          320: {
+            slidesPerView: 1.6,
+          }
+      }
+      });
+    }
+  } else if (init) {
+    pricingCardSwiper.destroy();
+    init = false;
+  }
+}
+searchCards();
+window.addEventListener("resize", searchCards);
