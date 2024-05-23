@@ -367,38 +367,97 @@ function isNumber(evt) {
 
 // search result
 
-var init = false;
-var pricingCardSwiper;
-function searchCards() {
-  if (window.innerWidth <= 767) {
-    if (!init) {
-      init = true;
-      pricingCardSwiper = new Swiper(".js-search-result", {
-        slidesPerView: 1,
-        grabCursor: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        loop: true,
-        keyboard: true,
+// var swiper = null;
+
+// function initSwiper() {
+//   if (window.innerWidth <= 767) {
+//     swiper = new Swiper('.js-search-result', {
+//       slidesPerView: 1.2,
+//       navigation: {
+//         nextEl: ".js-card-next",
+//         prevEl: ".js-card-prev",
+//         },
+//       breakpoints: {
+//         768: {
+//           slidesPerView: 3,
+//       },
+//       575: {
+//         slidesPerView: 3,
+//     },
+//         320: {
+//           slidesPerView: 1.6,
+//         }
+//     }
+//     });
+//   } else {
+//     if (swiper) {
+//       swiper.destroy();
+//     }
+//   }
+// }
+
+// var timer;
+
+// window.addEventListener('resize', function () {
+//   if (timer) {
+//     clearTimeout(timer);
+//   }
+
+//   timer = setTimeout(initSwiper, 200);
+// });
+
+// initSwiper();
+
+var initSearchResult = false;
+var swiperSearch;
+function swiperSearchCard() {
+  if (window.innerWidth <= 768) {
+    if (!initSearchResult) {
+      initSearchResult = true;
+      swiperSearch = new Swiper(".js-search-result", {
+        slidesPerView: 1.2,
+        navigation: {
+                  nextEl: ".js-card-next",
+                  prevEl: ".js-card-prev",
+          },
         breakpoints: {
-          767: {
-            slidesPerView: 3,
-        },
-        575: {
-          slidesPerView: 3,
-      },
-          320: {
-            slidesPerView: 1.6,
-          }
-      }
+                  768: {
+                    slidesPerView: 3,
+                },
+                575: {
+                  slidesPerView: 3,
+              },
+              480: {
+                slidesPerView: 3,
+            },
+                  320: {
+                    slidesPerView: 1.6,
+                  }
+              }
       });
     }
-  } else if (init) {
-    pricingCardSwiper.destroy();
-    init = false;
+  } else if (initSearchResult) {
+    swiperSearch.destroy();
+    initSearchResult = false;
   }
 }
-searchCards();
-window.addEventListener("resize", searchCards);
+swiperSearchCard();
+window.addEventListener("resize", swiperSearchCard);
+
+// filter
+
+window.addEventListener("resize", function() {
+  if (document.body.clientWidth <= 768) {
+    document.getElementById("filetr-col-left-show").style.display = "none"
+    //document.body.style.backgroundColor = "coral";
+  }
+});
+
+function myFunction() {
+  var x = document.getElementById("filetr-col-left-show");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

@@ -3,7 +3,7 @@
    <head>
       <!-- Required meta tags -->
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
       <title>CountertopSmart</title>
       <!-- fabicon -->
       <link rel=" shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -229,6 +229,10 @@
                      </a>
                   </div>
                </div>
+
+
+               <div class="js-card-next"></div>
+               <div class="js-card-prev"></div>
             </div>
          </div>
       </div>
@@ -246,145 +250,151 @@
             <div class="filetr-search-flex">
                <div class="filetr-col-left">
                   <div class="filetr-col-left-wrap">
-                     <h2>Filters</h2>
-                     <div class="serach-fliter-submit">
-                        <form>
-                           <input type="text" placeholder="Browse Stone..">
-                           <div class="serach-submit">
-                              <input type="submit">
-                              <img src="images/search-icon-w.svg" alt="">
+                     <button class="filter-btn" onclick="myFunction()">Filters</button>
+
+                     <div id="filetr-col-left-show">
+                        <div class="serach-fliter-submit">
+                           <form>
+                              <input type="text" placeholder="Browse Stone..">
+                              <div class="serach-submit">
+                                 <input type="submit">
+                                 <img src="images/search-icon-w.svg" alt="">
+                              </div>
+                           </form>
+                        </div>
+                        <div class="filter-accordion-wrap">
+                           <div class="accordion filter-accordion" id="accordionExample">
+                              <div class="accordion-item">
+                                 <div class="accordion-header" id="filer1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filter_collapse1" aria-expanded="true">
+                                    Material
+                                    </button>
+                                 </div>
+                                 <div id="filter_collapse1" class="accordion-collapse collapse show" aria-labelledby="filer1" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                       <form>
+                                          <div class="frm-label-filter">
+                                             <label>
+                                             <input type="checkbox" name="filter" id="filter1">
+                                             <span>Material 1</span>
+                                             </label>
+                                          </div>
+                                          <div class="frm-label-filter">
+                                             <label>
+                                             <input type="checkbox" name="filter" id="filter2">
+                                             <span>Material 2</span>
+                                             </label>
+                                          </div>
+                                          <div class="frm-label-filter">
+                                             <label>
+                                             <input type="checkbox" name="filter" id="filter3">
+                                             <span>Material 3</span>
+                                             </label>
+                                          </div>
+                                          <div class="frm-label-filter">
+                                             <label>
+                                             <input type="checkbox" name="filter" id="filter4">
+                                             <span>Material 4</span>
+                                             </label>
+                                          </div>
+                                          <div class="frm-label-filter">
+                                             <label>
+                                             <input type="checkbox" name="filter" id="filter5">
+                                             <span>Material 5</span>
+                                             </label>
+                                          </div>
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="accordion-item">
+                                 <div class="accordion-header" id="filer2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter_collapse2" aria-expanded="false">
+                                    Species
+                                    </button>
+                                 </div>
+                                 <div id="filter_collapse2" class="accordion-collapse collapse" aria-labelledby="filer2" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quidem!</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="accordion-item">
+                                 <div class="accordion-header" id="filer3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter_collapse3" aria-expanded="false">
+                                    Brands
+                                    </button>
+                                 </div>
+                                 <div id="filter_collapse3" class="accordion-collapse collapse" aria-labelledby="filer3" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quidem!</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="accordion-item">
+                                 <div class="accordion-header" id="filer4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter_collapse4" aria-expanded="false">
+                                    Color
+                                    </button>
+                                 </div>
+                                 <div id="filter_collapse4" class="accordion-collapse collapse" aria-labelledby="filer4" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quidem!</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="accordion-item">
+                                 <div class="accordion-header" id="filer5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter_collapse5" aria-expanded="false">
+                                    Thickness
+                                    </button>
+                                 </div>
+                                 <div id="filter_collapse5" class="accordion-collapse collapse" aria-labelledby="filer5" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quidem!</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="accordion-item">
+                                 <div class="accordion-header" id="filer6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter_collapse6" aria-expanded="false">
+                                    Finish
+                                    </button>
+                                 </div>
+                                 <div id="filter_collapse6" class="accordion-collapse collapse" aria-labelledby="filer6" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quidem!</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="accordion-item">
+                                 <div class="accordion-header" id="filer7">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter_collapse7" aria-expanded="false">
+                                    Size
+                                    </button>
+                                 </div>
+                                 <div id="filter_collapse7" class="accordion-collapse collapse" aria-labelledby="filer7" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quidem!</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="accordion-item">
+                                 <div class="accordion-header" id="filer8">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter_collapse8" aria-expanded="false">
+                                    Price
+                                    </button>
+                                 </div>
+                                 <div id="filter_collapse8" class="accordion-collapse collapse" aria-labelledby="filer8" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quidem!</p>
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
-                        </form>
+                        </div>
                      </div>
-                     <div class="accordion filter-accordion" id="accordionExample">
-                        <div class="accordion-item">
-                           <div class="accordion-header" id="filer1">
-                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filter_collapse1" aria-expanded="true">
-                              Material
-                              </button>
-                           </div>
-                           <div id="filter_collapse1" class="accordion-collapse collapse show" aria-labelledby="filer1" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                 <form>
-                                    <div class="frm-label-filter">
-                                       <label>
-                                       <input type="checkbox" name="filter" id="filter1">
-                                       <span>Material 1</span>
-                                       </label>
-                                    </div>
-                                    <div class="frm-label-filter">
-                                       <label>
-                                       <input type="checkbox" name="filter" id="filter2">
-                                       <span>Material 2</span>
-                                       </label>
-                                    </div>
-                                    <div class="frm-label-filter">
-                                       <label>
-                                       <input type="checkbox" name="filter" id="filter3">
-                                       <span>Material 3</span>
-                                       </label>
-                                    </div>
-                                    <div class="frm-label-filter">
-                                       <label>
-                                       <input type="checkbox" name="filter" id="filter4">
-                                       <span>Material 4</span>
-                                       </label>
-                                    </div>
-                                    <div class="frm-label-filter">
-                                       <label>
-                                       <input type="checkbox" name="filter" id="filter5">
-                                       <span>Material 5</span>
-                                       </label>
-                                    </div>
-                                 </form>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="accordion-item">
-                           <div class="accordion-header" id="filer2">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter_collapse2" aria-expanded="false">
-                              Species
-                              </button>
-                           </div>
-                           <div id="filter_collapse2" class="accordion-collapse collapse" aria-labelledby="filer2" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quidem!</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="accordion-item">
-                           <div class="accordion-header" id="filer3">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter_collapse3" aria-expanded="false">
-                              Brands
-                              </button>
-                           </div>
-                           <div id="filter_collapse3" class="accordion-collapse collapse" aria-labelledby="filer3" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quidem!</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="accordion-item">
-                           <div class="accordion-header" id="filer4">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter_collapse4" aria-expanded="false">
-                              Color
-                              </button>
-                           </div>
-                           <div id="filter_collapse4" class="accordion-collapse collapse" aria-labelledby="filer4" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quidem!</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="accordion-item">
-                           <div class="accordion-header" id="filer5">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter_collapse5" aria-expanded="false">
-                              Thickness
-                              </button>
-                           </div>
-                           <div id="filter_collapse5" class="accordion-collapse collapse" aria-labelledby="filer5" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quidem!</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="accordion-item">
-                           <div class="accordion-header" id="filer6">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter_collapse6" aria-expanded="false">
-                              Finish
-                              </button>
-                           </div>
-                           <div id="filter_collapse6" class="accordion-collapse collapse" aria-labelledby="filer6" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quidem!</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="accordion-item">
-                           <div class="accordion-header" id="filer7">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter_collapse7" aria-expanded="false">
-                              Size
-                              </button>
-                           </div>
-                           <div id="filter_collapse7" class="accordion-collapse collapse" aria-labelledby="filer7" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quidem!</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="accordion-item">
-                           <div class="accordion-header" id="filer8">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filter_collapse8" aria-expanded="false">
-                              Price
-                              </button>
-                           </div>
-                           <div id="filter_collapse8" class="accordion-collapse collapse" aria-labelledby="filer8" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quidem!</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+
                   </div>
                </div>
                <div class="filetr-col-right">
@@ -878,6 +888,9 @@
                            </div>
                         </div>
                      </div>
+                  </div>
+                  <div class="single-category-load-more">
+                     <a href="#" class="cmn-btn">Load More</a>
                   </div>
                </div>
             </div>
