@@ -445,7 +445,7 @@ swiperSearchCard();
 window.addEventListener("resize", swiperSearchCard);
 
 // filter
-
+document.getElementById("filetr-col-left-show").style.display = "none"
 window.addEventListener("resize", function() {
   if (document.body.clientWidth <= 768) {
     document.getElementById("filetr-col-left-show").style.display = "none"
